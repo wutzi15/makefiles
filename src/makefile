@@ -2,8 +2,8 @@ SRCS = $(shell find . -name '*.[cS]')
 SRCS += $(shell find . -name '*.cpp')
 OBJS = $(addsuffix .o,$(basename $(SRCS)))
 
-CC = icc
-CXX = icc 
+CC = gcc
+CXX = g++ 
 
 BOOSTDIR = -I/Users/wutzi/Downloads/boost_1_47_0/
 BOOSTLIBSDIR = -L/Users/wutzi/Downloads/boost_1_47_0/stage/lib/
@@ -14,7 +14,7 @@ ROOTLDFLAGS = `root-config --libs`
 ROOTINC = -I/Users/wutzi/root/root/include
 ROOTLIBS = -lSpectrum
 
-CFLAGS = -O4 \
+CFLAGS = -O3 \
 	 -fno-builtin \
 	 -mtune=core2 \
 	-D_REENTRANT \

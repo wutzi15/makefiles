@@ -14,7 +14,7 @@ ROOTLDFLAGS = `root-config --libs`
 ROOTINC = -I/Users/wutzi/root/root/include
 ROOTLIBS = -lSpectrum
 
-CFLAGS = -O4 \
+CFLAGS = -O3 \
 	 -fno-builtin \
 	 -mtune=core2 \
 	-D_REENTRANT \
